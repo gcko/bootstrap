@@ -23,10 +23,15 @@
 //
 // Happy Bootstrapping!
 
+// Override any particular Bootstrap variables
+@import "fonts/Roboto/roboto";
+@import "fonts/Inter/inter";
+@import "custom-variables";
 // Load Bootstrap variables and mixins
-@import "../../../scss/functions";
-@import "../../../scss/variables";
-@import "../../../scss/mixins";
+//@import "../../../scss/functions";
+//@import "../../../scss/variables";
+//@import "../../../scss/mixins";
+@import "../../../scss/bootstrap";
 
 // Load docs components
 @import "variables";

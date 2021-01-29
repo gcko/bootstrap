@@ -18,6 +18,18 @@ Bootstrap sets basic global display, typography, and link styles. When more cont
 
 These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`. Make sure to set `$font-size-base` in `rem`.
 
+## Font & Font Stack
+
+Measured uses __Inter__ for in-house products. If Inter is not available, fallback to __Roboto__.
+
+Measured uses a sans-serif font stack for most use-cases:
+
+- `$font-family-sans-serif: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`
+
+For Monospace fonts (such as formatted code), use the following font stack:
+
+- `$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;`
+
 ## Headings
 
 All HTML headings, `<h1>` through `<h6>`, are available.
