@@ -2,6 +2,10 @@
 // Brand guidelines
 //
 
+:root {
+  --#{$variable-prefix}font-sans-serif: #{inspect($font-family-sans-serif)};
+}
+
 // Logo series wrapper
 .bd-brand-logos {
   color: $bd-purple-bright;

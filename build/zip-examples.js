@@ -32,7 +32,8 @@ const jsFiles = [
 ]
 const imgFiles = [
   'bootstrap-logo.svg',
-  'bootstrap-logo-white.svg'
+  'bootstrap-logo-white.svg',
+  'measured-m-white.svg'
 ]
 
 sh.config.fatal = true
