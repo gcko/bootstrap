@@ -1,2 +1,37 @@
 // stylelint-disable value-keyword-case, scss/dollar-variable-default
 $font-family-sans-serif: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Color system
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #c4c4c4; // Modified
+$gray-500: #979797; // Modified
+$gray-600: #6c757d;
+$gray-700: #4a5159; // Modified
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:     #30a6f3; // Modified
+$sapphire: #5a94d8; // Added
+$indigo:   #7a5195; // Modified
+$purple:   #6f42c1;
+$rose:     #bd5091; // Added
+$pink:     #ef5675; // Modified
+$red:      #e55c5c; // Modified
+$orange:   #ff764a; // Modified
+$yellow:   #ffa600; // Modified
+$green:    #96c670; // Modified
+$teal:     #20c997;
+$cyan:     #0dcaf0;
+
+$primary:       $blue;
+$secondary:     $gray-500;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-700;
