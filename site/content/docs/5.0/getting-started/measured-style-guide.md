@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Introduction
-description: Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.
+title: Measured Style Guide
+description: Become familiar with Measured's style guide. Measured uses Bootstrap, a framework for building responsive sites.
 group: getting-started
 aliases:
   - "/docs/5.0/getting-started/"
@@ -12,42 +12,46 @@ toc: true
 
 ## Quick start
 
-Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? [Head to the downloads page]({{< docsref "/getting-started/download" >}}).
+Looking to quickly add Measured's styling to your project? Grab the latest copy of bootstrap as well as the `_custom-variables.scss` file located in the `sites/assets/scss/` directory.
 
-### CSS
+## Typography
 
-Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
+### Global settings
 
-```html
-<link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
-```
+Measured sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]({{< docsref "/utilities/text" >}}).
 
-### JS
+- Use the [font stack]({{< docsref "#font--font-stack" >}}) that is defined below.
+- For a more inclusive and accessible type scale, we use the browser's default root `font-size` (typically 16px) so visitors can customize their browser defaults as needed.
+- Use the `$font-family-base`, `$font-size-base`, and `$line-height-base` attributes as our typographic base applied to the `<body>`.
+- Set the global link color via `$link-color`.
+- Use `$body-bg` to set a `background-color` on the `<body>` (`#fff` by default).
+- __Set `$font-size-base` in `rem`.__
 
-Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and [Popper](https://popper.js.org/). Place **one of following `<script>`s** near the end of your pages, right before the closing `</body>` tag, to enable them.
+These styles can be found within `_reboot.scss`, and the global variables are defined in `_custom_variables.scss`, and are defaulted in `_variables.scss`.
 
-#### Bundle
+### Font & Font Stack
 
-Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both `bootstrap.bundle.js` and `bootstrap.bundle.min.js` include [Popper](https://popper.js.org/) for our tooltips and popovers. For more information about what's included in Bootstrap, please see our [contents]({{< docsref "/getting-started/contents#precompiled-bootstrap" >}}) section.
+Measured uses __Inter__ for in-house products. If Inter is not available, fallback to __Roboto__.
 
-```html
-<script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
-```
+Measured uses a sans-serif font stack for most use-cases:
 
-#### Separate
+- `$font-family-sans-serif: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`
 
-If you decide to go with the separate scripts solution, Popper must come first (if you're using tooltips or popovers), and then our JavaScript plugins.
+For Monospace fonts (such as formatted code), use the following font stack:
 
-```html
-<script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-<script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
-```
+- `$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;`
 
-#### Modules
+## Color
+
+## JS
+
+A few components require the use of JavaScript to function. These can be loaded by using the `ng-bootstrap` package.
+
+### Modules
 
 If you use `<script type="module">`, please refer to our [using Bootstrap as a module]({{< docsref "/getting-started/javascript#using-bootstrap-as-a-module" >}}) section.
 
-#### Components
+### Components
 
 Curious which components explicitly require our JavaScript and Popper? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
 
@@ -66,42 +70,6 @@ Curious which components explicitly require our JavaScript and Popper? Click the
 - Scrollspy for scroll behavior and navigation updates
 {{< /markdown >}}
 </details>
-
-## Starter template
-
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-    <script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
-```
-
-That's all you need for overall page requirements. Visit the [Layout docs]({{< docsref "/layout/grid" >}}) or [our official examples]({{< docsref "/examples" >}}) to start laying out your site's content and components.
 
 ## Important globals
 
