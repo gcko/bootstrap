@@ -1,3 +1,4 @@
+@import "../../../scss/functions";
 // stylelint-disable value-keyword-case, scss/dollar-variable-default
 $font-family-sans-serif: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -15,10 +16,10 @@ $gray-900: #212529;
 $black:    #000;
 
 $blue:     #30a6f3; // Modified
-$sapphire: #5a94d8; // Added
+$sapphire: #5a94d8 !default; // Added
 $indigo:   #7a5195; // Modified
 $purple:   #6f42c1;
-$rose:     #bd5091; // Added
+$rose:     #bd5091 !default; // Added
 $pink:     #ef5675; // Modified
 $red:      #e55c5c; // Modified
 $orange:   #ff764a; // Modified
@@ -26,6 +27,26 @@ $yellow:   #ffa600; // Modified
 $green:    #96c670; // Modified
 $teal:     #20c997;
 $cyan:     #0dcaf0;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "sapphire":   $sapphire,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "rose":       $rose,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+// scss-docs-end colors-map
 
 $primary:       $blue;
 $secondary:     $gray-500;
@@ -35,3 +56,23 @@ $warning:       $yellow;
 $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-700;
+
+$sapphire-100: tint-color($sapphire, 80%) !default;
+$sapphire-200: tint-color($sapphire, 60%) !default;
+$sapphire-300: tint-color($sapphire, 40%) !default;
+$sapphire-400: tint-color($sapphire, 20%) !default;
+$sapphire-500: $sapphire !default;
+$sapphire-600: shade-color($sapphire, 20%) !default;
+$sapphire-700: shade-color($sapphire, 40%) !default;
+$sapphire-800: shade-color($sapphire, 60%) !default;
+$sapphire-900: shade-color($sapphire, 80%) !default;
+
+$rose-100: tint-color($rose, 80%) !default;
+$rose-200: tint-color($rose, 60%) !default;
+$rose-300: tint-color($rose, 40%) !default;
+$rose-400: tint-color($rose, 20%) !default;
+$rose-500: $rose !default;
+$rose-600: shade-color($rose, 20%) !default;
+$rose-700: shade-color($rose, 40%) !default;
+$rose-800: shade-color($rose, 60%) !default;
+$rose-900: shade-color($rose, 80%) !default;
