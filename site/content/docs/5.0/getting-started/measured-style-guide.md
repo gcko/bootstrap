@@ -12,7 +12,21 @@ toc: true
 
 ## Quick start
 
-Looking to quickly add Measured's styling to your project? Grab the latest copy of bootstrap as well as the `_custom-variables.scss` file located in the `sites/assets/scss/` directory.
+Looking to quickly add Measured's styling to your project? Grab the latest copy of bootstrap as well as the `_measured-style-guide.scss` file located in the `sites/assets/scss/` directory.
+
+In detail, the process is as follows:
+
+1. Install the Bootstrap npm module into your project:
+```shell
+npm install bootstrap@5.0.0-beta1
+# or
+yarn add bootstrap@5.0.0-beta1
+```
+2. grab the `_measured-style-guide.scss` file and reference it before Bootstrap in your main `style.scss` file, at the very top.
+```scss
+@import '/src/assets/measured-style-guide';
+@import '../node_modules/bootstrap/scss/bootstrap';
+```
 
 ## Brand
 
