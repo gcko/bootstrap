@@ -32,7 +32,7 @@ yarn add bootstrap@5.0.0-beta1
 
 ### Logotype
 
-For a Measured product's top navigation, use our logotype. Do not modify our logos in any way. Do not use Measured's branding for your own open or closed source projects.
+For the top navigation of a Measured Product, use this logotype. Do not modify the logos in any way. Do not use Measured's branding for your own open or closed source projects.
 
 <div class="bd-brand-logos d-sm-flex text-center bg-light rounded-lg overflow-hidden w-100 mb-3">
   <div class="bd-brand-item w-100 px-2 py-5">
@@ -40,7 +40,7 @@ For a Measured product's top navigation, use our logotype. Do not modify our log
   </div>
 </div>
 
-Our logo mark is also available in inverse with white text. All rules for our primary logotype apply to this as well.
+The logo mark is also available in inverse with white text. All rules for our primary logotype apply to this as well.
 
 <div class="bd-brand-logos d-sm-flex text-center bg-light rounded-lg overflow-hidden w-100 mb-3">
   <div class="bd-brand-item w-100 px-2 py-5 inverse">
@@ -50,7 +50,7 @@ Our logo mark is also available in inverse with white text. All rules for our pr
 
 ### Logo
 
-When referencing Measured, use our logo mark. Do not modify our logos in any way. Do not use Measured's branding for your own open or closed source projects.
+When referencing Measured, use this logo mark. Do not modify the logos in any way. Do not use Measured's branding for your own open or closed source projects.
 
 <div class="bd-brand-item px-2 py-5 mb-3 bg-light rounded-lg">
   <img class="d-block img-fluid mx-auto" src="/docs/{{< param docs_version >}}/assets/brand/measured-m.svg" alt="Measured" width="100" height="100">
