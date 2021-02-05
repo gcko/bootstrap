@@ -8,7 +8,7 @@ toc: true
 
 ## Installing Bootstrap
 
-[Install bootstrap]({{< docsref "/getting-started/download#npm" >}}) as a Node.js module using npm.
+[Install bootstrap]({{< docsref "/getting-started/measured-style-guide#quick-start" >}}) as a Node.js module using npm.
 
 ## Importing JavaScript
 
