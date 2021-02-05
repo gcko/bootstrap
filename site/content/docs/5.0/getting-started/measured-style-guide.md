@@ -137,8 +137,6 @@ For Monospace fonts (such as formatted code), use the following font stack:
 
 - `$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;`
 
-## Color
-
 ## JS
 
 A few components require the use of JavaScript to function. These can be loaded by using the `ng-bootstrap` package.
