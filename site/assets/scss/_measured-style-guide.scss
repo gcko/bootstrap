@@ -5,6 +5,7 @@
 $font-family-sans-serif: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 // Color system
+// scss-docs-start gray-color-variables
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -16,7 +17,9 @@ $gray-700: #4a5159; // Modified
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
+// scss-docs-end gray-color-variables
 
+// scss-docs-start color-variables
 $blue:     #30a6f3; // Modified
 $sapphire: #5a94d8 !default; // Added
 $indigo:   #7a5195; // Modified
@@ -29,6 +32,7 @@ $yellow:   #ffa600; // Modified
 $green:    #96c670; // Modified
 $teal:     #20c997;
 $cyan:     #0dcaf0;
+// scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
@@ -50,6 +54,7 @@ $colors: (
 );
 // scss-docs-end colors-map
 
+// scss-docs-start theme-color-variables
 $primary:       $blue;
 $secondary:     $gray-500;
 $success:       $green;
@@ -58,6 +63,7 @@ $warning:       $yellow;
 $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-700;
+// scss-docs-end theme-color-variables
 
 $sapphire-100: tint-color($sapphire, 80%) !default;
 $sapphire-200: tint-color($sapphire, 60%) !default;

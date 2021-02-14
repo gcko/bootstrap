@@ -5,35 +5,35 @@
 .btn-bd-primary {
   font-weight: 600;
   color: $white;
-  background-color: $bd-purple-bright;
-  border-color: $bd-purple-bright;
+  background-color: $brand-color;
+  border-color: $brand-color;
 
   &:hover,
   &:active {
     color: $white;
-    background-color: shade-color($bd-purple-bright, 20%);
-    border-color: shade-color($bd-purple-bright, 20%);
+    background-color: shade-color($brand-color, 20%);
+    border-color: shade-color($brand-color, 20%);
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($bd-purple-bright, .25);
+    box-shadow: 0 0 0 3px rgba($brand-color, .25);
   }
 }
 
 .btn-bd-download {
   font-weight: 600;
-  color: $bd-download;
-  border-color: $bd-download;
+  color: $brand-download;
+  border-color: $brand-download;
 
   &:hover,
   &:active {
-    color: $bd-dark;
-    background-color: $bd-download;
-    border-color: $bd-download;
+    color: $brand-dark;
+    background-color: $brand-download;
+    border-color: $brand-download;
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($bd-download, .25);
+    box-shadow: 0 0 0 3px rgba($brand-download, .25);
   }
 }
 
@@ -44,12 +44,12 @@
   .show > &,
   &:hover,
   &:active {
-    color: $bd-purple-bright;
+    color: $brand-color-light;
     background-color: $white;
-    border-color: $bd-purple-bright;
+    border-color: $brand-color-dark;
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($bd-purple-bright, .25);
+    box-shadow: 0 0 0 3px rgba($brand-color-dark, .25);
   }
 }

@@ -22,7 +22,7 @@
 .algolia-docsearch-suggestion--category-header {
   padding: .125rem 1rem;
   font-weight: 600;
-  color: $bd-purple-bright;
+  color: $brand-color-dark;
 
   // stylelint-disable-next-line selector-class-pattern
   :not(.algolia-docsearch-suggestion__main) > & {
@@ -40,7 +40,7 @@
   padding: .25rem 1rem;
 
   .ds-cursor & {
-    background-color: rgba($bd-purple-light, .2);
+    background-color: rgba($brand-color-light, .2);
   }
 }
 
